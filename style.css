@@ -1,0 +1,128 @@
+body{
+    display: flex;
+}
+
+.form-ui{
+    width: 500px;
+    height: 600px;
+    position:relative;
+    padding: 5%;
+    left: 10px;
+    flex: 1;
+    margin: 20px;
+}
+
+.table-ui {
+    flex: 1;
+    margin: 20px;
+}
+
+.form-ui h3{
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    padding: 10px;
+}
+.submit{
+    position: absolute;
+    top: 10px; /* Sağ üst köşede boşluk için yükseklik değeri */
+    right: 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0077cc; /* Açık mavi renk */
+    color: #ffffff; /* Beyaz renk */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.name, .display-name{
+    width: 500px; 
+    border-radius: 10px; 
+    padding: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    flex: 1;
+    align-items: center;
+}
+
+
+.name input[type="text"], .display-name input[type="text"] {
+    width: 100%;
+    border: 2px solid #ddd; 
+    border-radius: 5px;
+    padding: 5px; 
+    font-size: 13px;
+    display: flex;
+    flex: 2; 
+}
+
+.phone, .email{
+    width: 500px; 
+    border-radius: 10px; 
+    padding: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+
+.phone input[type="number"], .email input[type="email"] {
+    width: 100%;
+    border: 2px solid #ddd; 
+    border-radius: 5px;
+    padding: 5px; 
+    font-size: 13px;
+    display: flex;
+}
+
+.users{
+    width: 500px;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.users input[type="text"]{
+    width: 100%;
+    border: 2px solid #ddd; 
+    border-radius: 5px;
+    padding: 5px; 
+    font-size: 13px;
+    display: flex;
+}
+
+.en{
+    width: 500px;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+th {
+    width: 4cm;
+    height: 1cm;
+    background-color: #6b81e5;
+    color: white;
+    padding: 8px;
+    text-align: left;
+}
+
+
+td {
+    background-color: lightblue;
+    padding: 8px;
+    text-align: left;
+    width: 4cm;
+    height: 1cm;
+}

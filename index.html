@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Management</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+</head>
+<body>
+     <div class="form-ui">
+        <h3 class="head">New User</h3>
+     <form action="/form-gonder" method="post">
+
+        <input type="submit" class="submit" value="Save User">
+
+    <div class="name">
+        <label for="name">Username:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="display-name">
+        <label for="display-name">Display Name:</label>
+        <input type="text" id="display" name="display-name" required>
+    </div>
+
+    <div class="phone">
+        <label for="phone">Phone:</label>
+        <input type="number" id="phone" name="phone" required>
+    </div>
+
+    <div class="email">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="users">
+        <label for="user-roles">User Roles:</label>
+        <input type="text" name="user" id="user-roles" placeholder="Select user roles.." list="User-Roles" autocomplete="off">
+         <datalist id="User-Roles">
+                  <option>Guest</option>
+                  <option>Admin</option>
+                  <option>SuperAdmin</option>
+         </datalist>
+    </div>
+    <div class="en">
+         <label for="En">Enabled</label>
+         <input type="checkbox" name="enabled" id="enabled">
+    </div>
+    </form>
+</div>
+
+<div class="table-ui">
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>User Name</th>
+            <th>Email</th>
+            <th>Enabled</th>
+        </tr>
+    </thead>
+    <tbody id="user-table">
+        <!--kullanıcı girişleri-->
+    </tbody>
+    </table>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
